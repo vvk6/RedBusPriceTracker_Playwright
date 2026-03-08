@@ -37,7 +37,16 @@ export default defineConfig({
     video: "retain-on-failure",
     viewport: {width:1200, height:720},
     ignoreHTTPSErrors:true,
-    permissions:['geolocation'],
+ //   permissions:['geolocation'],
+    launchOptions: {
+        args: [
+            '--disable-http2', // Forces the browser to use HTTP 1.1
+            '--disable-web-security',
+            '--no-sandbox',
+            '--disable-setuid-sandbox'
+        ],
+    },
+    userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
   },
 
   /* Configure projects for major browsers */
