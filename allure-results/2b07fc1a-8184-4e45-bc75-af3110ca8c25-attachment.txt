@@ -1,2 +1,0 @@
-Telegram text message sent successfully.
-login is visible: true
