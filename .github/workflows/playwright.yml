@@ -1,9 +1,9 @@
 name: Redbus Price Tracker
 on:
   schedule:
-    # Runs 4 times a day (6 AM, 12 PM, 6 PM, 12 AM UTC)
-    - cron: '0 0,6,12,18 * * *'
-  workflow_dispatch: # Allows you to run it manually from the GitHub UI
+    # Runs 4 times a day (UTC)
+    - cron: '30 2,7,12,17 * * *' # Adjusted to match IST: 8 AM, 1 PM, 6 PM, 11 PM
+  workflow_dispatch: 
 
 jobs:
   track-price:
@@ -24,14 +24,16 @@ jobs:
 
       - name: Run Tracker
         env:
-          # These must be set in your GitHub Repository Secrets
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: npx playwright test myBusPriceTracker.spec.ts
+        # THE FIX: Wrap the command in xvfb-run to simulate a real display
+        run: xvfb-run npx playwright test myBusPriceTracker.spec.ts
 
       - name: Upload Screenshots on Failure
         if: failure()
         uses: actions/upload-artifact@v4
         with:
           name: playwright-screenshots
-          path: Screenshots/
+          path: |
+            Screenshots/
+            test-results/
