@@ -21,12 +21,12 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
   //retries: process.env.CI ? 2 : 0,
-  retries:1,
+  retries: 1,
   /* Opt out of parallel tests on CI. */
   //workers: process.env.CI ? 1 : undefined,
-  workers:1,
+  workers: 1,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: [['html'],['allure-playwright'],['dot'],['list']],
+  reporter: [['html'], ['allure-playwright'], ['dot'], ['list']],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
@@ -38,16 +38,21 @@ export default defineConfig({
     trace: 'on-first-retry',
     screenshot: "only-on-failure",
     video: "retain-on-failure",
-   // viewport: {width:1200, height:720},
-    ignoreHTTPSErrors:true,
- //   permissions:['geolocation'],
+    // viewport: {width:1200, height:720},
+    ignoreHTTPSErrors: true,
+    //   permissions:['geolocation'],
+    extraHTTPHeaders: {
+      // This removes the "HeadlessChrome" brand which Playwright normally sends
+      'sec-ch-ua': '"Not.A/Brand";v="99", "Chromium";v="122", "Google Chrome";v="122"',
+      'sec-ch-ua-mobile': '?0',
+      'sec-ch-ua-platform': '"Windows"',
+    },
     launchOptions: {
-        args: [
-            '--disable-http2', // Forces the browser to use HTTP 1.1
-            '--disable-web-security',
-            '--no-sandbox',
-            '--disable-setuid-sandbox'
-        ],
+      args: [
+        '--disable-blink-features=AutomationControlled',
+        '--disable-http2',
+        '--no-sandbox',
+      ],
     },
     userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
   },

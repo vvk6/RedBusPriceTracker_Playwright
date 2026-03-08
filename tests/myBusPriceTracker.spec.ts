@@ -1,12 +1,28 @@
 import { test, expect } from '@playwright/test';
 import { TestConfig } from '../test.config';
 import { sendPriceAlert, sendTextMessage, getISTTime } from '../Utility/telegram'; // Assume you added sendTextMessage
+import { chromium } from 'playwright-extra';
+import stealth from 'puppeteer-extra-plugin-stealth';
 
+chromium.use(stealth());
 let config: TestConfig;
 const istTimestamp = getISTTime();
 
 test.beforeEach(async ({ page }) => {
     config = new TestConfig();
+    // INJECT STEALTH SCRIPT BEFORE NAVIGATION
+    await page.addInitScript(() => {
+        // Hides the webdriver property
+        Object.defineProperty(navigator, 'webdriver', { get: () => false });
+        // Mocks the languages property
+        Object.defineProperty(navigator, 'languages', { get: () => ['en-IN', 'en'] });
+    });
+
+    // Use a more patient wait strategy
+    await page.goto(config.appUrl, { 
+        waitUntil: 'domcontentloaded', 
+        timeout: 60000 
+    });
     await page.goto(config.appUrl);
 });
 
