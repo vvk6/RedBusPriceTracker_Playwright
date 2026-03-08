@@ -1,0 +1,864 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - link [ref=e6] [cursor=pointer]:
+          - /url: /
+          - img [ref=e7]
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link [ref=e11] [cursor=pointer]:
+              - /url: https://www.redbus.in/bus-tickets
+              - img [ref=e12]
+              - generic [ref=e13]: Bus tickets
+          - listitem [ref=e14]:
+            - link [ref=e15] [cursor=pointer]:
+              - /url: https://www.redbus.in/railways
+              - img [ref=e16]
+              - generic [ref=e17]: Train tickets
+        - navigation [ref=e18]:
+          - list [ref=e19]:
+            - listitem [ref=e20]:
+              - link [ref=e21] [cursor=pointer]:
+                - /url: https://www.redbus.in/myprofile#trips
+                - generic [ref=e22]: 
+                - text: Bookings
+            - listitem [ref=e23]:
+              - link [ref=e24] [cursor=pointer]:
+                - /url: https://www.redbus.in/info/redcare
+                - generic [ref=e25]: 
+                - text: Help
+            - listitem [ref=e26]:
+              - button [ref=e27] [cursor=pointer]:
+                - generic [ref=e28]: 
+                - text: Account
+    - generic [ref=e29]:
+      - generic [ref=e31]:
+        - button [ref=e33] [cursor=pointer]:
+          - generic [ref=e34]: 
+        - generic [ref=e35]:
+          - generic [ref=e38]:
+            - text: Bengaluru
+            - generic [ref=e39]: 
+            - text: Nanded
+          - generic [ref=e40]: 1 bus
+      - generic [ref=e41]:
+        - status [ref=e42]
+        - generic [ref=e43]:
+          - img [ref=e44] [cursor=pointer]
+          - generic [ref=e46]:
+            - generic [ref=e47]:
+              - combobox [ref=e48] [cursor=pointer]:
+                - generic [ref=e49]:
+                  - generic [ref=e50]: 
+                  - generic [ref=e51]:
+                    - generic [ref=e52]: From
+                    - generic [ref=e53]: Bengaluru
+              - button [ref=e54] [cursor=pointer]:
+                - img [ref=e55]
+            - combobox [ref=e56] [cursor=pointer]:
+              - generic [ref=e57]:
+                - generic [ref=e58]: 
+                - generic [ref=e59]:
+                  - generic [ref=e60]: To
+                  - generic [ref=e61]: Nanded
+            - generic [ref=e62]:
+              - button [ref=e63] [cursor=pointer]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]:
+                  - generic [ref=e66]: Date of journey
+                  - generic [ref=e68]: 18 Mar, 2026
+              - generic [ref=e69]:
+                - button [ref=e71] [cursor=pointer]: Today
+                - button [ref=e73] [cursor=pointer]: Tomorrow
+            - button [ref=e75] [cursor=pointer]:
+              - generic [ref=e76]: 
+    - generic [ref=e78]:
+      - complementary [ref=e79]:
+        - generic [ref=e80]:
+          - generic [ref=e81]:
+            - generic [ref=e82]:
+              - img [ref=e84]
+              - generic [ref=e85]: Eazzy filter
+            - generic [ref=e86]:
+              - generic [ref=e87]: AI powered
+              - text: smart search
+          - generic [ref=e88]:
+            - button [ref=e89] [cursor=pointer]:
+              - img [ref=e90]
+              - generic [ref=e93]: Try "evening departure"
+            - button [ref=e95] [cursor=pointer]:
+              - img [ref=e96]
+        - navigation [ref=e97]:
+          - heading [level=2] [ref=e99]: Filter buses
+          - generic [ref=e100]:
+            - checkbox [ref=e102]:
+              - listitem [ref=e103]:
+                - button [ref=e104] [cursor=pointer]:
+                  - generic [ref=e105]:
+                    - generic [ref=e106]: 
+                    - generic [ref=e107]: Free Cancellation (1)
+              - listitem [ref=e108]:
+                - button [ref=e109] [cursor=pointer]:
+                  - generic [ref=e110]:
+                    - generic [ref=e111]: 
+                    - generic [ref=e112]: AC (1)
+              - listitem [ref=e113]:
+                - button [ref=e114] [cursor=pointer]:
+                  - generic [ref=e115]:
+                    - generic [ref=e116]: 
+                    - generic [ref=e117]: SLEEPER (1)
+              - listitem [ref=e118]:
+                - button [ref=e119] [cursor=pointer]:
+                  - generic [ref=e120]:
+                    - generic [ref=e121]: 
+                    - generic [ref=e122]: Single Seats (1)
+              - listitem [ref=e123]:
+                - button [ref=e124] [cursor=pointer]:
+                  - generic [ref=e125]:
+                    - generic [ref=e126]: 
+                    - generic [ref=e127]: Live Tracking (1)
+            - group [ref=e128]:
+              - button [ref=e129] [cursor=pointer]:
+                - heading [level=3] [ref=e131]: Departure time from source
+                - generic [ref=e132]: 
+            - group [ref=e133]:
+              - button [ref=e134] [cursor=pointer]:
+                - heading [level=3] [ref=e136]: Arrival time at destination
+                - generic [ref=e137]: 
+            - group [ref=e138]:
+              - button [ref=e139] [cursor=pointer]:
+                - heading [level=3] [ref=e141]: Bus type
+                - generic [ref=e142]: 
+            - group [ref=e143]:
+              - button [ref=e144] [cursor=pointer]:
+                - heading [level=3] [ref=e146]: Single window seater/sleeper
+                - generic [ref=e147]: 
+            - group [ref=e148]:
+              - button [ref=e149] [cursor=pointer]:
+                - heading [level=3] [ref=e151]: Bus features
+                - generic [ref=e152]: 
+            - group [ref=e153]:
+              - button [ref=e154] [cursor=pointer]:
+                - heading [level=2] [ref=e156]: Bus operator
+                - generic [ref=e157]: 
+            - button [ref=e159] [cursor=pointer]:
+              - heading [level=2] [ref=e161]: Boarding points
+              - generic [ref=e162]: 
+            - button [ref=e164] [cursor=pointer]:
+              - heading [level=2] [ref=e166]: Dropping points
+              - generic [ref=e167]: 
+            - group [ref=e168]:
+              - button [ref=e169] [cursor=pointer]:
+                - heading [level=2] [ref=e171]: Amenities
+                - generic [ref=e172]: 
+      - generic [ref=e173]:
+        - region [ref=e175]:
+          - generic [ref=e177] [cursor=pointer]:
+            - generic [ref=e179]: 
+            - generic [ref=e180]: All buses
+          - img [ref=e183] [cursor=pointer]
+          - img [ref=e186] [cursor=pointer]
+          - img [ref=e189] [cursor=pointer]
+          - img [ref=e192] [cursor=pointer]
+        - status [ref=e193]
+        - status [ref=e194]: 1 bus found
+        - generic [ref=e195]:
+          - generic [ref=e196]: 1 bus found
+          - group [ref=e197]:
+            - generic [ref=e198]: "Sort by:"
+            - radiogroup [ref=e199]:
+              - radio [ref=e200] [cursor=pointer]:
+                - generic [ref=e201]: Ratings
+              - radio [ref=e202] [cursor=pointer]:
+                - generic [ref=e203]: Departure time
+              - radio [ref=e204] [cursor=pointer]:
+                - generic [ref=e205]: Price
+        - generic [ref=e208]: 500+ bookings on this route last month
+        - generic [ref=e209]:
+          - list [ref=e211]:
+            - button [ref=e212] [cursor=pointer]:
+              - button [ref=e214]:
+                - generic [ref=e215]:
+                  - generic [ref=e216]: Try new
+                  - generic [ref=e217]: 7.5% OFF
+              - generic [ref=e218]:
+                - generic [ref=e219]:
+                  - generic [ref=e220]:
+                    - paragraph [ref=e221]: 17:05
+                    - paragraph [ref=e223]: 08:30
+                  - generic [ref=e224]:
+                    - paragraph [ref=e225]: 15h 25m
+                    - generic [ref=e227]:
+                      - paragraph [ref=e228]: 34 Seats
+                      - paragraph [ref=e229]: (10 Single)
+                - generic [ref=e231]:
+                  - paragraph [ref=e232]: ₹3,000
+                  - paragraph [ref=e233]: ₹2,775
+                - generic [ref=e235]:
+                  - generic [ref=e236]:
+                    - generic [ref=e237]: Sharma Travels Nanded
+                    - generic [ref=e239]: 
+                  - paragraph [ref=e241]: Bharat Benz A/C Sleeper (2+1)
+                - generic [ref=e243]:
+                  - generic [ref=e245]:
+                    - generic [ref=e246]: 
+                    - generic [ref=e247]: "3.1"
+                  - generic [ref=e248]: "152"
+              - generic [ref=e250]:  
+              - listitem [ref=e253]:
+                - generic [ref=e254]: Free date change
+              - button [ref=e255]: View seats
+          - generic [ref=e258]: End of list
+  - generic [ref=e262]:
+    - navigation [ref=e263]:
+      - generic [ref=e264]:
+        - navigation [ref=e265]:
+          - generic [ref=e267]:
+            - heading [level=2] [ref=e268]: About redBus
+            - list [ref=e269]:
+              - listitem [ref=e270]:
+                - link [ref=e271] [cursor=pointer]:
+                  - /url: https://www.redbus.in/info/contactus
+                  - text: Contact us
+              - listitem [ref=e272]:
+                - link [ref=e273] [cursor=pointer]:
+                  - /url: https://www.redbus.in/sitemap.html
+                  - text: Sitemap
+              - listitem [ref=e274]:
+                - link [ref=e275] [cursor=pointer]:
+                  - /url: https://www.redbus.in/offers
+                  - text: Offers
+              - listitem [ref=e276]:
+                - link [ref=e277] [cursor=pointer]:
+                  - /url: https://www.redbus.in/careers
+                  - text: Careers
+        - navigation [ref=e278]:
+          - generic [ref=e280]:
+            - heading [level=2] [ref=e281]: Info
+            - list [ref=e282]:
+              - listitem [ref=e283]:
+                - link [ref=e284] [cursor=pointer]:
+                  - /url: https://www.redbus.in/info/termscondition
+                  - text: T&C
+              - listitem [ref=e285]:
+                - link [ref=e286] [cursor=pointer]:
+                  - /url: https://www.redbus.in/info/privacypolicy
+                  - text: Privacy policy
+              - listitem [ref=e287]:
+                - link [ref=e288] [cursor=pointer]:
+                  - /url: https://blog.redbus.in
+                  - text: Blog
+              - listitem [ref=e289]:
+                - link [ref=e290] [cursor=pointer]:
+                  - /url: https://onboardvendor.redbus.in/
+                  - text: Bus operator registration
+              - listitem [ref=e291]:
+                - link [ref=e292] [cursor=pointer]:
+                  - /url: https://in3.seatseller.travel/
+                  - text: Agent registration
+              - listitem [ref=e293]:
+                - link [ref=e294] [cursor=pointer]:
+                  - /url: https://www.acko.com/
+                  - text: Insurance partner
+              - listitem [ref=e295]:
+                - link [ref=e296] [cursor=pointer]:
+                  - /url: https://www.redbus.in/info/useragreement
+                  - text: User agreement
+              - listitem [ref=e297]:
+                - link [ref=e298] [cursor=pointer]:
+                  - /url: https://www.redbus.in/primo/primo-service
+                  - text: Primo Bus
+              - listitem [ref=e299]:
+                - link [ref=e300] [cursor=pointer]:
+                  - /url: https://www.redbus.in/bus-timetable
+                  - text: Bus Timetable
+              - listitem [ref=e301]:
+                - link [ref=e302] [cursor=pointer]:
+                  - /url: " https://www.redbus.in/bugbounty"
+                  - text: Report Security Issues
+        - navigation [ref=e303]:
+          - generic [ref=e305]:
+            - heading [level=2] [ref=e306]: Global Sites
+            - list [ref=e307]:
+              - listitem [ref=e308]:
+                - link [ref=e309] [cursor=pointer]:
+                  - /url: https://www.redbus.in/
+                  - text: India
+              - listitem [ref=e310]:
+                - link [ref=e311] [cursor=pointer]:
+                  - /url: https://www.redbus.sg/
+                  - text: Singapore
+              - listitem [ref=e312]:
+                - link [ref=e313] [cursor=pointer]:
+                  - /url: https://www.redbus.my/
+                  - text: Malaysia
+              - listitem [ref=e314]:
+                - link [ref=e315] [cursor=pointer]:
+                  - /url: https://www.redbus.id/
+                  - text: Indonesia
+              - listitem [ref=e316]:
+                - link [ref=e317] [cursor=pointer]:
+                  - /url: https://www.redbus.pe/
+                  - text: Peru
+              - listitem [ref=e318]:
+                - link [ref=e319] [cursor=pointer]:
+                  - /url: https://www.redbus.co/
+                  - text: Colombia
+              - listitem [ref=e320]:
+                - link [ref=e321] [cursor=pointer]:
+                  - /url: https://www.redbus.com.kh/
+                  - text: Cambodia
+              - listitem [ref=e322]:
+                - link [ref=e323] [cursor=pointer]:
+                  - /url: https://www.redbus.vn/
+                  - text: Vietnam
+        - navigation [ref=e324]:
+          - generic [ref=e326]:
+            - heading [level=2] [ref=e327]: Our Partners
+            - list [ref=e328]:
+              - listitem [ref=e329]:
+                - link [ref=e330] [cursor=pointer]:
+                  - /url: https://www.goibibo.com/bus/
+                  - text: Goibibo Bus
+              - listitem [ref=e331]:
+                - link [ref=e332] [cursor=pointer]:
+                  - /url: https://www.goibibo.com/hotels/
+                  - text: Goibibo Hotels
+              - listitem [ref=e333]:
+                - link [ref=e334] [cursor=pointer]:
+                  - /url: https://www.makemytrip.com/hotels/
+                  - text: Makemytrip Hotels
+    - generic [ref=e335]:
+      - img [ref=e336]
+      - generic [ref=e337]: redBus is the world's largest online bus ticket booking service trusted by over 56+ million happy customers globally. redBus offers bus ticket booking through its website, iOS and Android mobile apps for all major routes.
+    - generic [ref=e338]:
+      - generic [ref=e339]: Ⓒ 2026 MAKEMYTRIP (INDIA) PRIVATE LIMITED. All rights reserved
+      - list [ref=e340]:
+        - listitem [ref=e341]:
+          - link [ref=e342] [cursor=pointer]:
+            - /url: https://www.facebook.com/redbus.in/
+            - img [ref=e343]
+        - listitem [ref=e344]:
+          - link [ref=e345] [cursor=pointer]:
+            - /url: https://in.linkedin.com/company/redbus_2/
+            - img [ref=e346]
+        - listitem [ref=e347]:
+          - link [ref=e348] [cursor=pointer]:
+            - /url: https://twitter.com/redBus_in/
+            - img [ref=e349]
+        - listitem [ref=e350]:
+          - link [ref=e351] [cursor=pointer]:
+            - /url: https://www.instagram.com/accounts/login/?next=/redbusindia/
+            - img [ref=e352]
+  - dialog [ref=e354]:
+    - heading [level=2] [ref=e355]: Bengaluru to Nanded
+    - generic [ref=e357]:
+      - button [ref=e359] [cursor=pointer]:
+        - generic [ref=e360]: 
+      - heading [level=2] [ref=e361]:
+        - generic [ref=e363]:
+          - generic [ref=e364]: Bengaluru
+          - generic [ref=e365]: 
+          - text: Nanded
+      - button [ref=e367]:
+        - generic [ref=e368] [cursor=pointer]:
+          - generic [ref=e369]: Try new
+          - generic [ref=e370]: 7.5% OFF
+    - tablist [ref=e371]:
+      - generic [ref=e372]:
+        - tab [selected] [ref=e374]:
+          - tab [selected] [ref=e375] [cursor=pointer]:
+            - generic [ref=e376]: 1. Select seats
+        - tab [ref=e377]:
+          - tab [ref=e378] [cursor=pointer]:
+            - generic [ref=e379]: 2. Board/Drop point
+        - tab [ref=e380]:
+          - tab [ref=e381] [cursor=pointer]:
+            - generic [ref=e382]: 3. Passenger Info
+    - generic [ref=e386]:
+      - generic [ref=e387]:
+        - link [ref=e388] [cursor=pointer]: Use Tab to navigate through available seats. Press Space or Enter to select or deselect a seat. Lower deck seats are listed first, followed by upper deck seats. Maximum 6 seats can be selected.
+        - main [ref=e389]:
+          - group [ref=e390]:
+            - generic [ref=e391]: Press Enter to start navigating seats. Use arrow keys to move between seats. Press Tab or Escape to exit seat navigation. Lower deck seats are listed first, followed by upper deck seats. Maximum 6 seats can be selected.
+            - group [ref=e392]:
+              - generic [ref=e393]:
+                - generic [ref=e394]:
+                  - heading [level=3] [ref=e395]: Lower deck
+                  - img [ref=e396]
+                - button [ref=e398] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e400] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e402] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e404] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e406] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e408] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e410] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e412] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e414]:
+                  - generic: Sold
+                  - img [ref=e415]
+                - button [ref=e419] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e421] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e423] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e425] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e427] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e429] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e431] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e433] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e435] [cursor=pointer]:
+                  - generic: ₹3000
+            - group [ref=e437]:
+              - generic [ref=e438]:
+                - heading [level=3] [ref=e439]: Upper deck
+                - button [ref=e440] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e442] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e444] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e446] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e448] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e450] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e452] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e454] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e456]:
+                  - generic: Sold
+                  - img [ref=e457]
+                - button [ref=e461] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e463] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e465] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e467] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e469] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e471] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e473] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e475] [cursor=pointer]:
+                  - generic: ₹3000
+                - button [ref=e477] [cursor=pointer]:
+                  - generic: ₹3000
+        - generic [ref=e480]:
+          - heading [level=3] [ref=e481]: Know your seat types
+          - table [ref=e483]:
+            - rowgroup [ref=e484]:
+              - row [ref=e485]:
+                - columnheader [ref=e486]: Seat Types
+                - columnheader [ref=e487]: Seater
+                - columnheader [ref=e488]: Sleeper
+            - rowgroup [ref=e489]:
+              - row [ref=e490]:
+                - cell [ref=e491]: Available
+                - cell [ref=e492]:
+                  - img [ref=e494]
+                - cell [ref=e495]:
+                  - img [ref=e497]
+              - row [ref=e498]:
+                - cell [ref=e499]: Available only for male passenger
+                - cell [ref=e500]:
+                  - img [ref=e502]
+                - cell [ref=e503]:
+                  - img [ref=e505]
+              - row [ref=e506]:
+                - cell [ref=e507]: Already booked
+                - cell [ref=e508]:
+                  - img [ref=e510]
+                - cell [ref=e511]:
+                  - img [ref=e513]
+              - row [ref=e514]:
+                - cell [ref=e515]: Selected by you
+                - cell [ref=e516]:
+                  - img [ref=e518]
+                - cell [ref=e519]:
+                  - img [ref=e521]
+              - row [ref=e522]:
+                - cell [ref=e523]: Available only for female passenger
+                - cell [ref=e524]:
+                  - img [ref=e526]
+                - cell [ref=e527]:
+                  - img [ref=e529]
+              - row [ref=e530]:
+                - cell [ref=e531]: Booked by female passenger
+                - cell [ref=e532]:
+                  - img [ref=e534]
+                - cell [ref=e535]:
+                  - img [ref=e537]
+              - row [ref=e538]:
+                - cell [ref=e539]: Booked by male passenger
+                - cell [ref=e540]:
+                  - img [ref=e542]
+                - cell [ref=e543]:
+                  - img [ref=e545]
+      - generic [ref=e549]:
+        - generic [ref=e552]:
+          - generic [ref=e553]:
+            - heading [level=3] [ref=e555]: Sharma Travels Nanded
+            - generic [ref=e556]: 17:05 - 08:30 · Wed 18 Mar
+            - generic [ref=e558]: Bharat Benz A/C Sleeper (2+1)
+          - generic [ref=e560]:
+            - generic [ref=e562]:
+              - generic [ref=e563]: 
+              - generic [ref=e564]: "3.1"
+            - generic [ref=e565]: "152"
+        - region [ref=e566]:
+          - generic [ref=e567]:
+            - button [ref=e568]:
+              - img [ref=e569] [cursor=pointer]
+            - button [ref=e570]:
+              - img [ref=e571] [cursor=pointer]
+            - button [ref=e572]:
+              - img [ref=e573] [cursor=pointer]
+            - button [ref=e574]:
+              - img [ref=e575] [cursor=pointer]
+            - button [ref=e576]:
+              - img [ref=e577] [cursor=pointer]
+            - button [ref=e578]:
+              - img [ref=e579] [cursor=pointer]
+            - button [ref=e580]:
+              - img [ref=e581] [cursor=pointer]
+            - button [ref=e582]:
+              - img [ref=e583] [cursor=pointer]
+        - tablist [ref=e585]:
+          - generic [ref=e586]:
+            - tab [selected] [ref=e588]:
+              - tab [selected] [ref=e589] [cursor=pointer]:
+                - generic [ref=e590]: Why book this bus?
+            - tab [ref=e591]:
+              - tab [ref=e592] [cursor=pointer]:
+                - generic [ref=e593]: Bus route
+            - tab [ref=e594]:
+              - tab [ref=e595] [cursor=pointer]:
+                - generic [ref=e596]: Boarding point
+            - tab [ref=e597]:
+              - tab [ref=e598] [cursor=pointer]:
+                - generic [ref=e599]: Dropping point
+            - tab [ref=e600]:
+              - tab [ref=e601] [cursor=pointer]:
+                - generic [ref=e602]: Rest stop
+            - tab [ref=e603]:
+              - tab [ref=e604] [cursor=pointer]:
+                - generic [ref=e605]: Amenities
+            - tab [ref=e606]:
+              - tab [ref=e607] [cursor=pointer]:
+                - generic [ref=e608]: Rating and reviews
+            - tab [ref=e609]:
+              - tab [ref=e610] [cursor=pointer]:
+                - generic [ref=e611]: Booking policy
+        - generic [ref=e615]:
+          - heading [level=4] [ref=e619]: Why book this bus?
+          - generic [ref=e620]:
+            - button [disabled] [ref=e622] [cursor=pointer]:
+              - generic [ref=e623]:
+                - img [ref=e624]
+                - heading [level=5] [ref=e626]: Highly rated by women
+            - button [disabled] [ref=e629] [cursor=pointer]:
+              - generic [ref=e630]:
+                - img [ref=e631]
+                - heading [level=5] [ref=e633]: Free date change
+            - button [ref=e636] [cursor=pointer]:
+              - generic [ref=e637]:
+                - img [ref=e638]
+                - generic [ref=e639]:
+                  - heading [level=5] [ref=e640]: Try new
+                  - generic [ref=e641]:
+                    - generic [ref=e642]: Get 8 % Extra OFF
+                    - generic [ref=e643]: "Minimum ticket fare : INR 300"
+                    - generic [ref=e644]: "Maximum discount limit : INR 99999"
+              - generic [ref=e647]: 
+            - button [ref=e650] [cursor=pointer]:
+              - generic [ref=e651]:
+                - img [ref=e652]
+                - generic [ref=e653]:
+                  - heading [level=5] [ref=e654]: Live Tracking
+                  - generic [ref=e655]: You can now track your bus and plan your commute to the boarding point!Family members and friends can also check the bus location to coordinate pick-ups and rest assured about your safety.
+              - generic [ref=e658]: 
+            - button [ref=e661] [cursor=pointer]:
+              - generic [ref=e662]:
+                - img [ref=e663]
+                - generic [ref=e664]:
+                  - heading [level=5] [ref=e665]: Flexi Ticket
+                  - generic [ref=e666]: Change your travel date for free up to 8 hours before the depature. Get min 50% refund if you cancel the ticket at least 12 hours before departure.
+              - generic [ref=e669]: 
+        - generic [ref=e672]:
+          - generic [ref=e674]:
+            - heading [level=4] [ref=e675]: Bus route
+            - generic [ref=e676]: 15 hr 30 min
+          - generic [ref=e677]:
+            - generic [ref=e679]: Bangalore
+            - generic [ref=e682]: Tumakuru
+            - generic [ref=e685]: Sira
+            - generic [ref=e688]: Hiriyur
+            - generic [ref=e691]: Chitradurga
+            - generic [ref=e694]: Hospet
+            - generic [ref=e697]: Ilkal
+            - generic [ref=e700]: Almatti
+            - generic [ref=e703]: Vijayapura
+            - generic [ref=e706]: Horti (Karnataka)
+            - generic [ref=e709]: Zalki
+            - generic [ref=e712]: Solapur
+            - generic [ref=e715]: Tuljapur
+            - generic [ref=e718]: Latur
+            - generic [ref=e721]: Chakur
+            - generic [ref=e724]: Sirur Tajband
+            - generic [ref=e727]: Ahmedpur
+            - generic [ref=e730]: Malakoli
+            - generic [ref=e733]: Loha
+            - generic [ref=e736]: Sonkhed (Nanded)
+            - generic [ref=e739]: Nanded
+        - generic [ref=e742]:
+          - generic [ref=e744]:
+            - heading [level=4] [ref=e745]: Boarding point
+            - generic [ref=e746]: Bangalore
+          - list [ref=e747]:
+            - listitem [ref=e748]:
+              - generic [ref=e749]:
+                - text: 17:05
+                - generic [ref=e750]: 18 Mar
+              - generic [ref=e753]:
+                - generic [ref=e754]: Madiwala - dreamline travels lounge 13/1, hosur main road ,infront to savoury business hotel
+                - generic [ref=e755]: Madiwala - Dreamline Travels lounge 13/1, Hosur main road , infront to Savoury business Hotel, m no
+            - listitem [ref=e756]:
+              - generic [ref=e757]:
+                - text: 17:15
+                - generic [ref=e758]: 18 Mar
+              - generic [ref=e761]:
+                - generic [ref=e762]: Dairy circle - infront of kidwai hospital, m no
+                - generic [ref=e763]: Dairy Circle - Infront Of Kidwai Hospital, m no
+            - listitem [ref=e764]:
+              - generic [ref=e765]:
+                - text: 17:20
+                - generic [ref=e766]: 18 Mar
+              - generic [ref=e769]:
+                - generic [ref=e770]: Christ university gate towards dairy circle, m no
+                - generic [ref=e771]: Christ University Gate Towards Dairy Circle, m no
+            - listitem [ref=e772]:
+              - generic [ref=e773]:
+                - text: 18:00
+                - generic [ref=e774]: 18 Mar
+              - generic [ref=e777]:
+                - generic [ref=e778]: Kalasipalyam - dream line travels lounge opp metro, m no
+                - generic [ref=e779]: Kalasipalyam - Dream Line Travels Lounge Opp Metro, m no
+          - button [ref=e782] [cursor=pointer]: View all boarding points
+        - generic [ref=e785]:
+          - generic [ref=e787]:
+            - heading [level=4] [ref=e788]: Dropping point
+            - generic [ref=e789]: Nanded
+          - list [ref=e790]:
+            - listitem [ref=e791]:
+              - generic [ref=e792]:
+                - text: 08:30
+                - generic [ref=e793]: 19 Mar
+              - generic [ref=e796]:
+                - generic [ref=e797]: Sharma terminal-end of birdge-old kawtha naka
+                - generic [ref=e798]: Sharma terminal-end of birdge-old kawtha naka
+        - generic [ref=e801]:
+          - heading [level=4] [ref=e804]: Rest stop
+          - generic [ref=e805]: This bus has no rest stop
+        - generic [ref=e808]:
+          - heading [level=4] [ref=e812]: 5 amenities
+          - list [ref=e813]:
+            - listitem [ref=e814]:
+              - listitem [ref=e815]:
+                - generic [ref=e816]:
+                  - img [ref=e817]
+                  - generic [ref=e819]: Blankets
+            - listitem [ref=e820]:
+              - listitem [ref=e821]:
+                - generic [ref=e822]:
+                  - img [ref=e823]
+                  - generic [ref=e825]: Charging Point
+            - listitem [ref=e826]:
+              - listitem [ref=e827]:
+                - generic [ref=e828]:
+                  - img [ref=e829]
+                  - generic [ref=e831]: Reading Light
+            - listitem [ref=e832]:
+              - listitem [ref=e833]:
+                - generic [ref=e834]:
+                  - img [ref=e835]
+                  - generic [ref=e837]: CCTV
+            - listitem [ref=e838]:
+              - listitem [ref=e839]:
+                - generic [ref=e840]:
+                  - img [ref=e841]
+                  - generic [ref=e843]: Bed Sheet
+        - generic [ref=e847]:
+          - generic [ref=e848]:
+            - heading [level=4] [ref=e849]: Ratings & reviews
+            - group [ref=e850]:
+              - generic [ref=e851]:
+                - generic [ref=e852]: 
+                - text: "3.1"
+              - generic [ref=e853]: 152 Ratings
+          - generic [ref=e854]:
+            - list [ref=e855]:
+              - listitem [ref=e856]:
+                - generic [ref=e857]:
+                  - generic [ref=e858]: "5"
+                  - generic [ref=e859]: 
+                - generic [ref=e862]: 41%
+              - listitem [ref=e863]:
+                - generic [ref=e864]:
+                  - generic [ref=e865]: "4"
+                  - generic [ref=e866]: 
+                - generic [ref=e869]: 12%
+              - listitem [ref=e870]:
+                - generic [ref=e871]:
+                  - generic [ref=e872]: "3"
+                  - generic [ref=e873]: 
+                - generic [ref=e876]: 9%
+              - listitem [ref=e877]:
+                - generic [ref=e878]:
+                  - generic [ref=e879]: "2"
+                  - generic [ref=e880]: 
+                - generic [ref=e883]: 10%
+              - listitem [ref=e884]:
+                - generic [ref=e885]:
+                  - generic [ref=e886]: "1"
+                  - generic [ref=e887]: 
+                - generic [ref=e890]: 28%
+            - generic [ref=e891]:
+              - heading [level=4] [ref=e892]: Loved by travelers
+              - list [ref=e893]:
+                - listitem [ref=e894]:
+                  - generic [ref=e895]: Live tracking (18)
+                - listitem [ref=e896]:
+                  - generic [ref=e897]: Seat / Sleep Comfort (18)
+                - listitem [ref=e898]:
+                  - generic [ref=e899]: AC (17)
+                - listitem [ref=e900]:
+                  - generic [ref=e901]: Driving (15)
+                - listitem [ref=e902]:
+                  - generic [ref=e903]: Staff behavior (14)
+                - listitem [ref=e904]:
+                  - generic [ref=e905]: Rest stop hygiene (12)
+            - generic [ref=e906]:
+              - heading [level=4] [ref=e907]: Could be better
+              - list [ref=e908]:
+                - listitem [ref=e909]:
+                  - generic [ref=e910]: Punctuality (40)
+                - listitem [ref=e911]:
+                  - generic [ref=e912]: Cleanliness (21)
+            - button [ref=e915] [cursor=pointer]: Read all 44 reviews
+        - generic [ref=e917]:
+          - generic [ref=e918]:
+            - heading [level=4] [ref=e921]: Cancellation policy
+            - table [ref=e924]:
+              - rowgroup [ref=e925]:
+                - row [ref=e926]:
+                  - columnheader [ref=e927]: Time before travel
+                  - columnheader [ref=e928]: Deduction
+              - rowgroup [ref=e929]:
+                - row [ref=e930]:
+                  - cell [ref=e931]: Before 18th Mar 09:05 AM
+                  - cell [ref=e932]: ₹300 (10%)
+                - row [ref=e933]:
+                  - cell [ref=e934]: From 18th Mar 09:05 AM Until 18th Mar 05:05 PM
+                  - cell [ref=e935]: ₹3000 (100%)
+            - list [ref=e936]:
+              - listitem [ref=e937]: "* Cancellation charges are computed on a per seat basis. Above cancellation fare is calculated based on seat fare of ₹ 3000"
+              - listitem [ref=e938]: "* Cancellation charges are calculated based on service start date + time at :18-03-2026 17:05"
+              - listitem [ref=e939]: "* Ticket cannot be cancelled after scheduled bus departure time from the first boarding point"
+              - listitem [ref=e940]: "* Note: Cancellation charges mentioned above are excluding GST"
+              - listitem [ref=e941]: "* For group bookings cancellation of individual seats is not allowed."
+          - generic [ref=e943]:
+            - heading [level=4] [ref=e946]: Date change policy
+            - table [ref=e949]:
+              - rowgroup [ref=e950]:
+                - row [ref=e951]:
+                  - columnheader [ref=e952]: Time before travel
+                  - columnheader [ref=e953]: Date change charges
+              - rowgroup [ref=e954]:
+                - row [ref=e955]:
+                  - cell [ref=e956]: Before 18th Mar 09:00 AM
+                  - cell [ref=e957]: FREE
+          - generic [ref=e959]:
+            - heading [level=4] [ref=e962]: Other Policies
+            - list [ref=e963]:
+              - generic [ref=e965] [cursor=pointer]:
+                - img [ref=e966]
+                - generic [ref=e967]:
+                  - heading [level=5] [ref=e968]: Child passenger policy
+                  - generic [ref=e970]: Children above the age of 5 will need a ticket
+              - generic [ref=e972] [cursor=pointer]:
+                - img [ref=e973]
+                - generic [ref=e974]:
+                  - heading [level=5] [ref=e975]: Luggage policy
+                  - generic [ref=e976]:
+                    - generic [ref=e977]: 2 pieces of luggage will be accepted free of charge per passenger. Excess items will be chargeable
+                    - generic [ref=e978]: Excess baggage over 20 kgs per passenger will be chargeable
+              - generic [ref=e980] [cursor=pointer]:
+                - img [ref=e981]
+                - generic [ref=e982]:
+                  - heading [level=5] [ref=e983]: Pets Policy
+                  - generic [ref=e985]: Pets are not allowed
+              - generic [ref=e987] [cursor=pointer]:
+                - img [ref=e988]
+                - generic [ref=e989]:
+                  - heading [level=5] [ref=e990]: Liquor Policy
+                  - generic [ref=e992]: Carrying or consuming liquor inside the bus is prohibited. Bus operator reserves the right to deboard drunk passengers.
+              - generic [ref=e994] [cursor=pointer]:
+                - img [ref=e995]
+                - generic [ref=e996]:
+                  - heading [level=5] [ref=e997]: Pick up time policy
+                  - generic [ref=e999]: Bus operator is not obligated to wait beyond the scheduled departure time of the bus. No refund request will be entertained for late arriving passengers.
+  - dialog [ref=e1001]:
+    - generic [ref=e1002]:
+      - generic [ref=e1005]: Login to get exciting offers
+      - button [active] [ref=e1007] [cursor=pointer]:
+        - generic [ref=e1008]: 
+    - generic [ref=e1009]:
+      - generic [ref=e1010]:
+        - heading [level=4] [ref=e1013]: What's your mobile number?
+        - generic [ref=e1014]:
+          - generic [ref=e1017]:
+            - generic [ref=e1019] [cursor=pointer]:
+              - generic: Country Code
+              - generic [ref=e1020]:
+                - generic [ref=e1021]: +91 (IND)
+                - generic [ref=e1022]: 
+            - generic [ref=e1024]:
+              - generic: Mobile number
+              - textbox [ref=e1025]
+          - button [disabled] [ref=e1027] [cursor=pointer]: Continue
+      - generic [ref=e1028]:
+        - generic [ref=e1029]: By logging in, I agree
+        - generic [ref=e1030]:
+          - generic [ref=e1031]:
+            - link [ref=e1032] [cursor=pointer]:
+              - /url: https://www.redbus.in/info/termscondition
+              - text: Terms & Conditions
+            - text: "&"
+          - link [ref=e1034] [cursor=pointer]:
+            - /url: https://www.redbus.in/info/privacypolicy
+            - text: Privacy Policy
+```
