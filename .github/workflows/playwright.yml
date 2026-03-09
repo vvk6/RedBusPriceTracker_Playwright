@@ -2,7 +2,7 @@ name: Redbus Price Tracker
 on:
   schedule:
     # Runs 4 times a day (UTC)
-    - cron: '30 2,7,12,17 * * *' # Adjusted to match IST: 8 AM, 1 PM, 6 PM, 11 PM
+    - cron: '0 */6 * * *' # Adjusted to match IST: 8 AM, 1 PM, 6 PM, 11 PM
   workflow_dispatch: 
 
 jobs:
