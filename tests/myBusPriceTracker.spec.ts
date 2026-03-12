@@ -95,7 +95,7 @@ test(`Price tracker for Bus from ${config.source} <=> ${config.destination2}`, a
     const executionDate = istTimestamp;
 
     // 1. Send Start Notification
-    await sendTextMessage(`🕒 Tracker Started\nDate: ${executionDate}\nRoute: ${config.source} to ${config.destination2}`);
+    // await sendTextMessage(`🕒 Tracker Started\nDate: ${executionDate}\nRoute: ${config.source} to ${config.destination2}`);
 
     try {
         // --- Locators ---
@@ -143,7 +143,7 @@ test(`Price tracker for Bus from ${config.source} <=> ${config.destination2}`, a
         const busListViewSSPath = `Screenshots/buslistview-${Date.now()}.png`;
         await page.locator('//ul[@data-autoid="exact"]').screenshot({ path: busListViewSSPath });
 
-        // await sendScreenshot(busListViewSSPath);
+        await sendScreenshot(busListViewSSPath);
 
 
         for (let i = 0; i < count; i++) {
@@ -158,13 +158,11 @@ test(`Price tracker for Bus from ${config.source} <=> ${config.destination2}`, a
             let seatSelectionView = page.locator('#dialogTitle');
             await seatSelectionView.isVisible();
 
-            await buscard.getByRole('button', { name: /view seats/i }).click();
-           
 
             if (await loginBottomsheet.isVisible({ timeout: 4000 })) {
                 await loginBottomsheet.locator('button[aria-label="Close"]').click();
             }
-            const busImages = page.getByText(/FR bus image/i );
+            const busImages = page.getByAltText(/FR bus image 1/i);
             await waitForImageLoad(busImages);
 
             const seatSelectionSSPath = `Screenshots/seatselection-${Date.now()}.png`;
@@ -172,7 +170,12 @@ test(`Price tracker for Bus from ${config.source} <=> ${config.destination2}`, a
 
             // 2. Send Success Notification
             await sendPriceAlert(busName, busPrice, busCardViewSS, seatSelectionSSPath);
-            await page.locator('button:has(.icon-close)').click();
+            await page.getByLabel('Close', { exact: true }).click();
+            // await page.locator('//button[@aria-label="Close"]/i').click();
+
+            // await seatSelectionHeader.waitFor({state:'hidden', timeout:3000});
+
+            //await page.locator('button:has(.icon-close)').click();
         }
 
 
@@ -190,5 +193,7 @@ async function waitForImageLoad(locator: any) {
     await locator.waitFor({ state: 'visible' });
     const handle = await locator.elementHandle();
     await locator.page().waitForFunction(
-        (img: HTMLImageElement) => img.complete && img.naturalWidth > 0, handle);
+        (img: HTMLImageElement) => img.complete && img.naturalWidth > 0,
+        handle
+    );
 }
