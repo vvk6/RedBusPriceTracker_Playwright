@@ -3,10 +3,10 @@ import fs from 'fs';
 
 
 
-const CHAT_ID = '898999018';
-const BOT_TOKEN = '8369414618:AAFJVI-DCrp5KI8UywJ47u-_9RbMtqTbmx4';
-//const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || '';
-//const CHAT_ID = process.env.TELEGRAM_CHAT_ID || '';
+///const CHAT_ID = '898999018';
+//const BOT_TOKEN = '8369414618:AAFJVI-DCrp5KI8UywJ47u-_9RbMtqTbmx4';
+const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || '';
+const CHAT_ID = process.env.TELEGRAM_CHAT_ID || '';
 const bot = new Telegraf(BOT_TOKEN);
 
 export async function sendPriceAlert(busName: string, price: string, screenshotPath: string, screenshotPath2: string) {
