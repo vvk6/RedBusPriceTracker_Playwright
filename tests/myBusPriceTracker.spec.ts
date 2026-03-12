@@ -26,8 +26,12 @@ test.beforeEach(async ({ page }) => {
     });
     await page.goto(config.appUrl);
 });
+test.afterEach(async({page})=>{
+    await page.close();
 
-test.skip(`Price Tracker for ${config.source} <=> ${config.destination}`, async ({ page }) => {
+});
+
+test(`Price Tracker for ${config.source} <=> ${config.destination}`, async ({ page }) => {
     const executionDate = istTimestamp;
 
     // 1. Send Start Notification
@@ -46,10 +50,12 @@ test.skip(`Price Tracker for ${config.source} <=> ${config.destination}`, async 
         // --- Execution ---
         await expect.soft(logo).toBeVisible();
         await srcInput.fill(config.source);
-        await page.locator('//div[@aria-label="Bengaluru"]').nth(0).click();
+        await page.getByRole('heading', { name: `${config.source}`, exact: true }).click();
+       // await page.locator('//div[@aria-label="Bengaluru"]').nth(0).click();
 
         await destInput.fill(config.destination);
-        await page.locator('//div[@aria-label="Nanded"]').nth(0).click();
+        await page.getByRole('heading', { name: `${config.destination}`, exact: true }).click();
+        //await page.locator('//div[@aria-label="Nanded"]').nth(0).click();
 
         await page.getByRole('combobox', { name: /Select Date of Journey/i }).click();
         await page.getByRole('button', { name: /Wednesday, March 18, 2026/i }).click();
