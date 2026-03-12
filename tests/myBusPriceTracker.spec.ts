@@ -91,7 +91,7 @@ test.skip(`Price Tracker for ${config.source} <=> ${config.destination}`, async 
     }
 });
 
-test.only(`Price tracker for Bus from ${config.source} <=> ${config.destination2}`, async ({ page }) => {
+test(`Price tracker for Bus from ${config.source} <=> ${config.destination2}`, async ({ page }) => {
     const executionDate = istTimestamp;
 
     // 1. Send Start Notification
