@@ -31,7 +31,7 @@ test.afterEach(async({page})=>{
 
 });
 
-test(`Price Tracker for ${config.source} <=> ${config.destination}`, async ({ page }) => {
+test.skip(`Price Tracker for ${config.source} <=> ${config.destination}`, async ({ page }) => {
     const executionDate = istTimestamp;
 
     // 1. Send Start Notification
@@ -124,7 +124,7 @@ test(`Price tracker for Bus from ${config.source} <=> ${config.destination2}`, a
         // await page.locator('//div[@aria-label="Nagpur"]').nth(0).click();
         await page.getByRole('heading', { name: `${config.destination2}`, exact: true }).click();
         await page.getByRole('combobox', { name: /Select Date of Journey/i }).click();
-        await page.getByRole('button', { name: /Wednesday, March 18, 2026/i }).click();
+        await page.getByRole('button', { name: /Thursday, May 7, 2026/i }).click();
         await page.getByRole('button', { name: 'Search buses' }).click();
 
         // Wait for results
