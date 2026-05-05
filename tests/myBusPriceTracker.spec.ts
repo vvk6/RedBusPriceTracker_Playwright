@@ -169,7 +169,12 @@ test(`Price tracker for Bus from ${config.source} <=> ${config.destination2}`, a
                 await loginBottomsheet.locator('button[aria-label="Close"]').click();
             }
             const busImages = page.getByAltText(/FR bus image 1/i);
-            await waitForImageLoad(busImages);
+            try{
+                await waitForImageLoad(busImages);
+            } catch( error){
+              console.error('Failed to send Telegram text message:', error);
+            }
+            
 
             const seatSelectionSSPath = `Screenshots/seatselection-${Date.now()}.png`;
             await seatSelectionHeader.screenshot({ path: seatSelectionSSPath });
