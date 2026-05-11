@@ -1,8 +1,8 @@
 name: Redbus Price Tracker
 on:
   schedule:
-    # Runs for every 3 hours
-    - cron: '0 */3 * * *' 
+    # Runs for every 6 hours
+    - cron: '0 */6 * * *' 
   workflow_dispatch: 
 
 jobs:
