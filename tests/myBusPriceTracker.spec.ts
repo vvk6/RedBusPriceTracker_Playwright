@@ -31,8 +31,10 @@ test.afterEach(async({page})=>{
 
 });
 
-test.skip(`Price Tracker for ${config.source} <=> ${config.destination}`, async ({ page }) => {
-    const executionDate = istTimestamp;
+
+
+test(`Price Tracker for ${config.destination} <=> ${config.source}`, async ({ page }) => {
+    const executionDate = istTimestamp; 
 
     // 1. Send Start Notification
     await sendTextMessage(`🕒 Tracker Started\nDate: ${executionDate}\nRoute: ${config.source} to ${config.destination}`);
@@ -49,16 +51,16 @@ test.skip(`Price Tracker for ${config.source} <=> ${config.destination}`, async 
 
         // --- Execution ---
         await expect.soft(logo).toBeVisible();
-        await srcInput.fill(config.source);
-        await page.getByRole('heading', { name: `${config.source}`, exact: true }).click();
+        await srcInput.fill(config.destination);
+        await page.getByRole('heading', { name: `${config.destination}`, exact: true }).click();
        // await page.locator('//div[@aria-label="Bengaluru"]').nth(0).click();
 
-        await destInput.fill(config.destination);
-        await page.getByRole('heading', { name: `${config.destination}`, exact: true }).click();
+        await destInput.fill(config.source);
+        await page.getByRole('heading', { name: `${config.source}`, exact: true }).click();
         //await page.locator('//div[@aria-label="Nanded"]').nth(0).click();
 
         await page.getByRole('combobox', { name: /Select Date of Journey/i }).click();
-        await page.getByRole('button', { name: /Wednesday, March 18, 2026/i }).click();
+        await page.getByRole('button', { name: /Sunday, May 17, 2026/i }).click();
         await page.getByRole('button', { name: 'Search buses' }).click();
 
         // Wait for results
@@ -97,7 +99,7 @@ test.skip(`Price Tracker for ${config.source} <=> ${config.destination}`, async 
     }
 });
 
-test(`Price tracker for Bus from ${config.source} <=> ${config.destination2}`, async ({ page }) => {
+test.skip(`Price tracker for Bus from ${config.source} <=> ${config.destination2}`, async ({ page }) => {
     const executionDate = istTimestamp;
 
     // 1. Send Start Notification
