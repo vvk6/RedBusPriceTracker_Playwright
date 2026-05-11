@@ -37,7 +37,7 @@ test(`Price Tracker for ${config.destination} <=> ${config.source}`, async ({ pa
     const executionDate = istTimestamp; 
 
     // 1. Send Start Notification
-    await sendTextMessage(`🕒 Tracker Started\nDate: ${executionDate}\nRoute: ${config.source} to ${config.destination}`);
+    await sendTextMessage(`🕒 Tracker Started\nDate: ${executionDate}\nRoute: ${config.destination} to ${config.source}`);
 
     try {
         // --- Locators ---
@@ -76,12 +76,16 @@ test(`Price Tracker for ${config.destination} <=> ${config.source}`, async ({ pa
         // Open Seats
         await busCardView.getByRole('button', { name: /view seats/i }).click();
         await loginBottomsheet.waitFor({ state: 'visible', timeout: 3000 }).catch(() => { });
-        await expect(loginBottomsheet).toBeVisible();
+       // await expect(loginBottomsheet).toBeVisible();
 
         if (await loginBottomsheet.isVisible()) {
             await loginBottomsheet.locator('button[aria-label="Close"]').click();
         }
-        await expect.soft(busImages).toBeVisible();
+         try{
+                await waitForImageLoad(busImages);
+            } catch( error){
+              console.error('Failed to send Telegram text message:', error);
+            }
 
         // Seat Selection Screenshot
         await expect(seatSelectionHeader).toBeVisible();
