@@ -103,7 +103,7 @@ test(`Price Tracker for ${config.destination} <=> ${config.source}`, async ({ pa
     }
 });
 
-test.skip(`Price tracker for Bus from ${config.source} <=> ${config.destination2}`, async ({ page }) => {
+test(`Price tracker for Bus from ${config.destination2} <=> ${config.source}`, async ({ page }) => {
     const executionDate = istTimestamp;
 
     // 1. Send Start Notification
@@ -122,15 +122,15 @@ test.skip(`Price tracker for Bus from ${config.source} <=> ${config.destination2
 
         // --- Execution ---
         await expect.soft(logo).toBeVisible();
-        await srcInput.fill(config.source);
-        await page.getByRole('heading', { name: `${config.source}`, exact: true }).click();
+        await srcInput.fill(config.destination2);
+        await page.getByRole('heading', { name: `${config.destination2}`, exact: true }).click();
         // await page.locator('//div[@aria-label="Bengaluru"]').nth(0).click();
 
-        await destInput.fill(config.destination2);
+        await destInput.fill(config.source);
         // await page.locator('//div[@aria-label="Nagpur"]').nth(0).click();
-        await page.getByRole('heading', { name: `${config.destination2}`, exact: true }).click();
+        await page.getByRole('heading', { name: `${config.source}`, exact: true }).click();
         await page.getByRole('combobox', { name: /Select Date of Journey/i }).click();
-        await page.getByRole('button', { name: /Thursday, May 7, 2026/i }).click();
+        await page.getByRole('button', { name: /Sunday, May 17, 2026/i }).click();
         await page.getByRole('button', { name: 'Search buses' }).click();
 
         // Wait for results
